@@ -177,11 +177,11 @@ public class Basics {
          */
 
         if (arr.size() = 0) {
-            return current_sum
+            return current_sum;
         }
         for (int i = 0; i < arr.size(); i++) {
-            if (i % 2 = 1) {
-                current_sum += 1
+            if (i % 2 == 1) {
+                current_sum += 1;
         }
         }
         
