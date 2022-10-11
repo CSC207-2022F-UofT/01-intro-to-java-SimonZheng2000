@@ -43,7 +43,8 @@ public class Basics {
         /* TODO (Task 1): Write a line of code below that prints the string
          *                Hello World!
          */
-        System.out.println(“Hello World!");
+        String s = "Hello World!";
+        System.out.println(s);
 
 
 
@@ -64,7 +65,7 @@ public class Basics {
          *                value 100.
          */
          
-        int my_variable = 100
+        int my_variable = 100;
 
 
 
@@ -103,8 +104,8 @@ public class Basics {
          * Current count: 0
          */
          
-        for (int i = 10; i >= 0; i++) {
-            System.out.println("Current count:" + i);
+        for (int i = 10; i >= 0; i--) {
+            System.out.println("Current count: " + i);
         }
     }
 
@@ -149,6 +150,12 @@ public class Basics {
 
         // Fill in the rest of the body here
 
+        String[] split = to_split.split(" ");
+        for(int i = 0; i < 7; i++){
+            ret.append(split[i].charAt(0));
+        }
+
+
         return ret.toString();
     }
 
@@ -176,15 +183,14 @@ public class Basics {
          *                (e.g. arr[i] gives you the item at index i).
          */
 
-        if (arr.size() = 0) {
+        if (arr.length == 0) {
             return current_sum;
         }
-        for (int i = 0; i < arr.size(); i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (i % 2 == 1) {
-                current_sum += 1;
+                current_sum += arr[i];
         }
         }
-        
         return current_sum;
     }
 
